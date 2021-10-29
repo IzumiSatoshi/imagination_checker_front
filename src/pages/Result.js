@@ -14,7 +14,7 @@ export const Result = () => {
   const [resultJson, setResultJson] = useState();
   useEffect(() => {
     const wordList = urlParams.getAll('word');
-    const url = 'http://34.82.123.221';
+    const url = 'https://imagination-checker-back.izumi-satoshi.com';
     const options = {
       method: 'POST',
       headers: { 'Content-Type': 'application/json' },
@@ -22,13 +22,11 @@ export const Result = () => {
       mode: 'cors',
     };
 
-    console.log('start');
     fetch(url, options)
       .then((res) => res.json())
       .then((resJson) => {
         setResultJson(resJson);
       });
-    console.log('end');
   }, []);
 
   const onClickRetryButton = () => {
