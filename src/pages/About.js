@@ -30,6 +30,16 @@ export const About = () => {
           </a>
         </p>
         <p css={textStyle}>
+          技術的な解説記事は、こちらで公開しています。
+          <br />
+          <a
+            href="https://qiita.com/IzumiSatoshi/items/a026015275124cc0e9cf"
+            css={aStyle}
+          >
+            https://qiita.com/IzumiSatoshi/items/a026015275124cc0e9cf
+          </a>
+        </p>
+        <p css={textStyle}>
           githubでソースコードを公開しています。
           <br />
           フロントエンド :{' '}
